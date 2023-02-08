@@ -1,0 +1,111 @@
+style.css
+.container{
+	width: 500px;
+	margin: 0 auto;
+}
+
+
+
+.card-white{
+	width: 1450px;
+	height: 80px;
+	background-color: white;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+	text-align: center;
+	padding: 10px;
+}
+
+#card-name {
+	font-size: 70px;
+}
+
+#card img {
+	background-image: linear-gradient(-400deg, grey 5%, black 75%), url("Uber/images/uber-23.jpg");
+	color: white;
+	background-size: cover;
+	background-position: center;
+}
+
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	background-color: beige;
+}
+.card h3{
+	margin-top: 20;
+	font-size: 28px;
+}
+
+.card p{
+	font-size: 27px;
+	color: black;
+	margin-bottom: 20px;
+}
+
+.card a{
+	display: inline-block;
+	background-color: black;
+	color: #fff;
+	padding: 10px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-bottom: 30px;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	margin:1;
+	padding:23;
+}
+
+header{
+	background-color: #333;
+	color: skyblue;
+	padding: 17em;
+}
+
+header nav ul{
+	display: flex;
+	list-style: none;
+	margin:15;
+	padding:20;
+}
+
+header nav a{
+	background-position: center;
+	color: #fff;
+	text-decoration: none;
+	padding:1em;
+}
+
+main{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+}
+
+h1{
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+button{
+	background-color: black;
+	border: none;
+	color: #fff;
+	padding: 1em 1.5em;
+	margin-top:2em;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+}
