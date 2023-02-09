@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
+a {
+    color: #000;
+}
+
+.banner {
+    background-image: url(img/banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.banner-box {
+    width: 40%;
+    background: #fff;
+    padding: 50px;
+}
+
+.banner-box h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.banner-box p {
+    padding-bottom: 30px;
+}
+
+.btn {
+    background: #000;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.btn:hover {
+    background: #333333;
+}
+
+.link {
+    color: #333333;
+}
+
+.business {
+    background-image: url(img/business.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    padding: 30px;
+}
+
+.business p {
+    padding: 20px 0;
+}
+
+.business h1 {
+    font-size: 35px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.padding {
+    padding: 50px 0;
+}
+
+.helf {
+    padding: 30px;
+}
+
+.helf h1 {
+    font-size: 35px;
+    padding: 30px 0;
+}
+
+.helf p {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.title {
+    padding: 0 30px;
+    font-size: 35px;
+    color: #333333;
+}
+
+.helf h4 {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.helf p {
+    padding-bottom: 20px;
+}
+
+.helf a {
+    padding-right: 20px;
+}
+
+.bg-color {
+    background: #f6f6f6;
+}
+
+.apps {
+    background: #fff;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.apps h2 {
+    padding: 20px;
+}
+
+.apps_link a {
+    text-decoration: none;
+}
+
+.singup a:hover {
+    color: #333333;
+}
+
+.singup a h1 {
+    border-bottom: 1px solid #000;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+
+}
+
+/* header */
+
+.header {
+    background-color: #000000;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-box {
+        width: auto;
+        padding: 20px
+    }
+
+    .banner-box h1 {
+        font-size: 30px;
+    }
+
+    .btn {
+        max-width: 20px 0;
+    }
+
+    .banner {
+        height: 60vh;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .feature img {
+        width: inherit;
+        padding-top: 0px;
+    }
+
+    .apps img {
+        width: 30%;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 425px) {
+    .banner-box {
+        width: auto;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .banner-box h1 {
+        font-size: 25px;
+    }
+
+    .btn {
+        max-width: 20px 0;
+    }
+
+    .banner {
+        height: 70vh;
+    }
+
+    .business h1 {
+        font-size: 25px;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .helf h1 {
+        font-size: 25px;
+    }
+
+    .helf {
+        padding: 0 30px;
+    }
+
+    .title {
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .helf h4 {
+        font-size: 18px;
+    }
+
+    .safety img {
+        padding-top: 20px;
+    }
+
+    .feature {
+        padding: 50px 0;
+    }
+
+    .feature img {
+        width: inherit;
+        padding-top: 20px;
+    }
+
+    .apps h2 {
+        font-size: 20px;
+    }
+
+    .apps {
+        padding: 15px;
+    }
+
+    .apps img {
+        width: 30%;
+    }
+
+
+
+}
